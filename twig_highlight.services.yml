@@ -1,0 +1,7 @@
+services:
+  twig_highlight.twig.highlight:
+    class: Drupal\twig_highlight\Twig\HighlightExtension
+    arguments:
+      - "@renderer"
+    tags:
+      - { name: twig.extension }

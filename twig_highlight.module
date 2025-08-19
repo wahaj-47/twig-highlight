@@ -1,0 +1,17 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function twig_highlight_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        case 'help.page.twig_highlight':
+            return t('
+                        <h2>Highlight in twig.</h2>
+                        <p>This module adds a highlight filter for twig templates</p>
+                    ');
+    }
+}

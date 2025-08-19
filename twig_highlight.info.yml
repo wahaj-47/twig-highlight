@@ -1,0 +1,6 @@
+name: Twig Highlight
+description: Adds a twig extension that highlights words based on keywords.
+package: Custom
+
+type: module
+core_version_requirement: ^9 || ^10
