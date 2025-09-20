@@ -4,7 +4,6 @@ namespace Drupal\twig_highlight\Twig;
 
 use Drupal\Core\Render\Markup;
 use Drupal\Core\Render\RendererInterface;
-use Psr\Container\ContainerInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 
