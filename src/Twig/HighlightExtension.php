@@ -50,8 +50,9 @@ class HighlightExtension extends AbstractExtension
     protected function applyHighlight(string $html, string $keyword): string
     {
         $escaped_term = preg_quote($keyword, '/');
+
         return preg_replace(
-            "/($escaped_term)/i",
+            "/($escaped_term)/iu",
             '<em>$1</em>',
             $html
         );
